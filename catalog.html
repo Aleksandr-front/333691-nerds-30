@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/152.svg">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header>
-               <a><img src="index.html" height="65" width="160" alt="Логотип компании"></a>
+               <a><img src="img/nerds-logo.svg" height="65" width="160" alt="Логотип компании"></a>
       <nav>
        <ul>
            <li><a href="#">Студия</a></li>
@@ -15,9 +19,9 @@
            <li><a href="#">Контакты</a></li>
        </ul>
       </nav>
-               <a href="#">Корзина</a>
+               <a href="#"><img src="img/cart-icon.svg" height="15" width="15" alt="Иконка корзины">Корзина</a>
       <h1>Магазин готовых шаблонов</h1>
-    </header> 
+    </header>
     <main>
       <section>
           <form method="post" action="https://echo.htmlacademy.ru">
@@ -25,7 +29,7 @@
                 <legend><h3>Стоимость:</h3></legend>
                   <label for="min">От</label>
                     <input type="number" name="min-interval" value="0" id="min">
-                  <label for="max">До</label> 
+                  <label for="max">До</label>
                     <input type="number" name="max-interval" value="15000" id="max">
               </fieldset>
             </form>
@@ -34,17 +38,17 @@
                 <legend><h3>Сетка:</h3></legend>
                   <ul>
                     <li>
-                      <label> 
+                      <label>
                            <input type="radio" name="view" value="adaptive" id="filter-adaptive" checked> <span>Адаптивная</span>
                       </label>
                     </li>
                     <li>
-                      <label> 
+                      <label>
                          <input type="radio" name="fixed" value="adaptive" id="filter-fixed"> <span>Фиксированная</span>
                       </label>
                     </li>
                     <li>
-                      <label> 
+                      <label>
                        <input type="radio" name="rubber" value="adaptive" id="filter-rubber"> <span>Резиновая</span>
                       </label>
                     </li>
@@ -104,59 +108,53 @@
       <section>
           <ul>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a>  <!--Шаблон Седона-->
+                <a href="#"><img src="img/img-sedona-1.jpg" height="578" width="358" alt="Шаблон сайта Седона"></a>  <!--Шаблон Седона-->
               <div>
                 <h3>Sedona</h3>
                 <p>Информационный сайт<br>для туристов</p>
-                <img src="#" height="50" width="200" alt="Цена">
                 <p><button type="submit" name="add-to-cart">9 900P</button></p>
               </div>
             </li>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a>  <!--Шаблон Пинк-->
+                <a href="#"><img src="img/img-pink-1.jpg" height="578" width="358" alt="Шаблон сайта Пинк"></a>  <!--Шаблон Пинк-->
               <div>
                 <h3>Pink</h3>
                 <p>Взгляни на мир<br>инача</p>
-                <img src="#" height="50" width="200" alt="Цена">
                 <p><button type="submit" name="add-to-cart">10 900P</button></p>
               </div>
             </li>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a> <!--Шаблон Барбер Шоп-->
+                <a href="#"><img src="img/img-barbershop-1.png" height="578" width="358" alt="Шаблон сайта Барбершоп"></a> <!--Шаблон Барбер Шоп-->
               <div>
                 <h3>Borodinski</h3>
                 <p>Стрижка у нас<br>это выгодно</p>
-                <img src="#" height="50" width="200" alt="Цена">
                 <p><button type="submit" name="add-to-cart">8 600P</button></p>
               </div>
              </li>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a>  <!--Шаблон Мишка-->
+                <a href="#"><img src="img/img-mishka-1.jpg" height="578" width="358" alt="Шаблон сайта Мишка"></a>  <!--Шаблон Мишка-->
               <div>
                 <h3>Mishka</h3>
                 <p>Милые штуки ручной<br>работы для дома</p>
-                <img src="#" height="50" width="200" alt="Цена">
-                <p><button type="submit" name="add-to-cart">12 200P</button></p>  
+                <p><button type="submit" name="add-to-cart">12 200P</button></p>
               </div>
             </li>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a>  <!--Шаблон А+-->
+                <a href="#"><img src="img/img-aplus-1.png" height="578" width="358" alt="Шаблон сайта А+"></a>  <!--Шаблон А+-->
               <div>
                 <h3>A+</h3>
                 <p>Учеба никогда не была<br>такой интересной</p>
-                <img src="#" height="50" width="200" alt="Цена">
                 <p><button type="submit" name="add-to-cart">10 600P</button></p>
               </div>
             </li>
             <li>
-                <a href="#"><img src="#" height="40" width="360" alt="Шаблон"></a> <!--Шаблон Кваст-->
+                <a href="#"><img src="img/img-kvast-1.jpg" height="578" width="358" alt="Шаблон сайта Кваст"></a> <!--Шаблон Кваст-->
               <div>
                 <h3>Кваст</h3>
                 <p>Крафтовый квас<br>всему голова</p>
-                <img src="#" height="50" width="200" alt="Цена">
                 <p><button type="submit" name="add-to-cart">10 500</button></p>
               </div>
-            </li> 
+            </li>
             </ul>
             <ul>
                 <li><a>1</a></li>
@@ -164,7 +162,7 @@
                 <li><a href="#">3</a></li>
                 <li><a href="#">Следующая</a></li>
             </ul>
-      </section>  
+      </section>
     </main>
     <footer>
         <section>
@@ -175,7 +173,7 @@
             тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
             <button type="submit" name="senr-to-me">Напишите нам</button>
           </address>
-            <img src="#" height="190" width="231" alt="Маркер">
+            <img src="img/map-marker-1.png" height="190" width="231" alt="Маркер">
         </section>
         <section>
             <ul>
@@ -189,4 +187,3 @@
        </footer>
   </body>
   </html>
-  
