@@ -1,0 +1,166 @@
+/* Используемые цвета */
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-super-silver: #EEEEEE;
+  --basic-soft-red: #FB565A;       /* Покой */
+  --basic-bright-red: #E74246;     /* Наведение */
+  --basic-moderate-red: #D7373B;   /* Нажатие */
+  --basic-lime-green: #00CA74;     /* Покой */
+  --basic-strong-cyann: #00BC6C;   /* Наведение */
+  --basic-dark-cyan: #00AA62;      /* Нажатие */
+  --basic-soft-yellow: #EFC849;    /* Покой */
+  --basic-bright-orange: #EAB534;  /* Наведение */
+  --basic-vivid-orange: #E5A722;   /* Нажатие */
+  --basic-very-dark-grayish: #283136;
+}
+
+.main-header, .block-slide {background-color:var(--basic-super-silver);}
+
+ul{list-style-type:none;}
+
+.page{
+  text-decoration:none;
+  font-family: Roboto;
+  font-style: normal;
+  color: #000000;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services-header {
+  font-size: 24px;
+  line-height: 30px;}
+
+p, .about-list{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dev-order, .progress-block{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.progress-percent{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.progress-text, .adres{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.page-footer-name{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.site-navigation a, .basket {
+  text-decoration:none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.block-slide>h1 {
+  margin:0px;
+  visibility:hidden;
+}
+
+.friend{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.friend-discount{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button-slide{
+  display: table-cell;
+  width:240px;
+  height:50px;
+  color:#EEEEEE;
+  background-color: var(--basic-soft-red);
+  border-radius: 3px;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  vertical-align: middle;
+}
+
+
+.button-slide:hover{background-color: var(--basic-bright-red);}
+.button-slide:active{background-color: var(--basic-moderate-red);}
+
+.button-service-1,
+.button-service-2,
+.button-service-3{
+  display: table-cell;
+  width:160px;
+  height:50px;
+  color:#EEEEEE;
+  border-radius: 3px;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  vertical-align: middle;
+}
+
+.button-service-1{background-color: var(--basic-soft-red)}
+.button-service-1:hover{background-color: var(--basic-bright-red)}
+.button-service-1:active{background-color: var(--basic-moderate-red)}
+.button-service-2{background-color: var(--basic-lime-green)}
+.button-service-2:hover{background-color: var(--basic-strong-cyann)}
+.button-service-2:active{background-color: var(--basic-dark-cyan)}
+.button-service-3{background-color: var(--basic-soft-yellow)}
+.button-service-3:hover{background-color: var(--basic-bright-orange)}
+.button-service-3:active{background-color: var(--basic-vivid-orange)}
+
+.button-add{
+  width:200px;
+  height:50px;
+  color:#EEEEEE;
+  background-color: var(--basic-soft-red);
+  border-radius: 3px;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  vertical-align: middle;
+}
+
+.button-add:hover{background-color: var(--basic-bright-red)}
+.button-add:active{background-color: var(--basic-moderate-red)}
+
+.button-write{
+  width:219px;
+  height:50px;
+  color:#EEEEEE;
+  background-color: var(--basic-soft-red);
+  border-radius: 3px;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  vertical-align: middle;
+  border:none;
+}
+
+.button-write:hover{background-color: var(--basic-bright-red)}
+.button-write:active{background-color: var(--basic-moderate-red)}
