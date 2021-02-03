@@ -15,12 +15,25 @@
   --basic-very-dark-grayish: #283136;
 }
 
-.main-header, .block-slide {background-color:var(--basic-super-silver);}
+.services-header {
+  font-size: 24px;
+  line-height: 30px;
+}
 
-ul{list-style-type:none;}
+.main-header {
+  background-color: var(--basic-super-silver);
+}
+
+.block-slide{
+  background-color: var(--basic-super-silver);
+}
+
+ul{
+  list-style-type: none;
+}
 
 .page{
-  text-decoration:none;
+  text-decoration: none;
   font-family: Roboto;
   font-style: normal;
   color: #000000;
@@ -37,10 +50,6 @@ h3{
   font-size: 55px;
   line-height: 55px;
 }
-
-.services-header {
-  font-size: 24px;
-  line-height: 30px;}
 
 p, .about-list{
   font-size: 16px;
@@ -71,15 +80,35 @@ p, .about-list{
 }
 
 .site-navigation a, .basket {
-  text-decoration:none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  color:black
+}
+
+.navigation-state {
+  color:black;
+}
+
+.navigation-state:hover{
+  color: var(--basic-soft-red);
+
+}
+.navigation-state:active{
+  color: var(--basic-black);
+  opacity:0.3;
+}
+
+.navigation-stateL:link{
+  color: var(--basic-black);
+  border-bottom: 2px solid #FB565A;
+  padding-bottom: 10px;
 }
 
 .block-slide>h1 {
-  margin:0px;
-  visibility:hidden;
+  margin: 0px;
+  visibility: hidden;
 }
 
 .friend{
@@ -95,72 +124,108 @@ p, .about-list{
 
 .button-slide{
   display: table-cell;
-  width:240px;
-  height:50px;
-  color:#EEEEEE;
+  width: 240px;
+  height: 50px;
+  color: #EEEEEE;
   background-color: var(--basic-soft-red);
   border-radius: 3px;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   vertical-align: middle;
 }
 
 
-.button-slide:hover{background-color: var(--basic-bright-red);}
-.button-slide:active{background-color: var(--basic-moderate-red);}
+.button-slide:hover{
+  background-color: var(--basic-bright-red);
+}
 
-.button-service-1,
-.button-service-2,
-.button-service-3{
+.button-slide:active{
+  background-color: var(--basic-moderate-red);
+}
+
+.button-service{
   display: table-cell;
-  width:160px;
-  height:50px;
-  color:#EEEEEE;
+  width: 160px;
+  height :50px;
+  color: #EEEEEE;
   border-radius: 3px;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   vertical-align: middle;
 }
 
-.button-service-1{background-color: var(--basic-soft-red)}
-.button-service-1:hover{background-color: var(--basic-bright-red)}
-.button-service-1:active{background-color: var(--basic-moderate-red)}
-.button-service-2{background-color: var(--basic-lime-green)}
-.button-service-2:hover{background-color: var(--basic-strong-cyann)}
-.button-service-2:active{background-color: var(--basic-dark-cyan)}
-.button-service-3{background-color: var(--basic-soft-yellow)}
-.button-service-3:hover{background-color: var(--basic-bright-orange)}
-.button-service-3:active{background-color: var(--basic-vivid-orange)}
+.button-service-red{background-color: var(--basic-soft-red)}
+.button-service-red:hover{background-color: var(--basic-bright-red)}
+.button-service-red:active{background-color: var(--basic-moderate-red)}
+.button-service-green{background-color: var(--basic-lime-green)}
+.button-service-green:hover{background-color: var(--basic-strong-cyann)}
+.button-service-green:active{background-color: var(--basic-dark-cyan)}
+.button-service-orange{background-color: var(--basic-soft-yellow)}
+.button-service-orange:hover{background-color: var(--basic-bright-orange)}
+.button-service-orange:active{background-color: var(--basic-vivid-orange)}
 
 .button-add{
-  width:200px;
-  height:50px;
-  color:#EEEEEE;
+  width: 200px;
+  height: 50px;
+  color: #EEEEEE;
   background-color: var(--basic-soft-red);
   border-radius: 3px;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   vertical-align: middle;
 }
 
-.button-add:hover{background-color: var(--basic-bright-red)}
-.button-add:active{background-color: var(--basic-moderate-red)}
+.button-add:hover{
+  background-color: var(--basic-bright-red);
+}
+.button-add:active{
+  background-color: var(--basic-moderate-red);
+}
 
 .button-write{
-  width:219px;
-  height:50px;
-  color:#EEEEEE;
+  width: 219px;
+  height: 50px;
+  color :#EEEEEE;
   background-color: var(--basic-soft-red);
   border-radius: 3px;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   vertical-align: middle;
-  border:none;
+  border: none;
 }
 
-.button-write:hover{background-color: var(--basic-bright-red)}
-.button-write:active{background-color: var(--basic-moderate-red)}
+.button-write:hover{
+  background-color: var(--basic-bright-red);
+}
+
+.button-write:active{
+  background-color: var(--basic-moderate-red);
+}
+
+.main-header-logo{
+  opacity: 1;
+}
+
+.main-header-logo:hover{
+  opacity: 0.7;
+}
+
+.main-header-logo:active{
+  opacity: 0.3;
+}
+
+.logo-list a img{
+  opacity: 0.2;
+}
+
+.logo-list a img:hover {
+  opacity: 1;
+}
+
+.logo-list a img:active{
+   opacity: 0.1;
+}
