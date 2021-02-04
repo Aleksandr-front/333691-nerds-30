@@ -3,6 +3,8 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-super-silver: #EEEEEE;
+  --basic-very-light-gray: #DFDFDF;
+  --basic-very-light-gray-black: #D5D5D5;
   --basic-soft-red: #FB565A;       /* Покой */
   --basic-bright-red: #E74246;     /* Наведение */
   --basic-moderate-red: #D7373B;   /* Нажатие */
@@ -32,11 +34,16 @@ ul{
   list-style-type: none;
 }
 
+a{
+text-decoration: none;
+color: var(--basic-black);
+}
+
 .page{
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 h2{
@@ -84,11 +91,11 @@ p, .about-list{
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
-  color:black
+  color: var(--basic-black);
 }
 
 .navigation-state {
-  color:black;
+  color: var(--basic-black);
 }
 
 .navigation-state:hover{
@@ -97,7 +104,7 @@ p, .about-list{
 }
 .navigation-state:active{
   color: var(--basic-black);
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 .navigation-stateL:link{
@@ -126,7 +133,7 @@ p, .about-list{
   display: table-cell;
   width: 240px;
   height: 50px;
-  color: #EEEEEE;
+  color: var(--basic-white);
   background-color: var(--basic-soft-red);
   border-radius: 3px;
   text-decoration: none;
@@ -148,7 +155,7 @@ p, .about-list{
   display: table-cell;
   width: 160px;
   height :50px;
-  color: #EEEEEE;
+  color: var(--basic-white);
   border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
@@ -169,13 +176,14 @@ p, .about-list{
 .button-add{
   width: 200px;
   height: 50px;
-  color: #EEEEEE;
+  color: var(--basic-white);
   background-color: var(--basic-soft-red);
   border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  border: none;
 }
 
 .button-add:hover{
@@ -188,7 +196,7 @@ p, .about-list{
 .button-write{
   width: 219px;
   height: 50px;
-  color :#EEEEEE;
+  color: var(--basic-white);
   background-color: var(--basic-soft-red);
   border-radius: 3px;
   text-decoration: none;
@@ -228,4 +236,89 @@ p, .about-list{
 
 .logo-list a img:active{
    opacity: 0.1;
+}
+
+.page-number a{
+  display: table-cell;
+  width: 47px;
+  height: 47px;
+  background-color: var(--basic-super-silver);
+  border: 3px solid var(--basic-super-silver);
+  border-radius: 3px;
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page-number-check a{
+  background-color: var(--basic-white);
+}
+
+.page-number a:hover{
+  background-color: var(--basic-very-light-gray);
+}
+
+.page-number a:active{
+  background-color: var(--basic-very-light-gray-black);
+  color: var(--basic-black);
+  opacity: 0.5;
+}
+
+.page-number a:Link{
+  border: 3px solid var(--basic-super-silver);
+
+}
+
+.page-number-next a{
+  width: 260px;
+  height: 50px;
+}
+
+.name-catalog-item{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+span{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.name-filter{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sorting-item a{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.applу{
+  width: 260px;
+  height: 50px;
+  background-color: var(--basic-super-silver);
+  border: none;
+  color: var(--basic-black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.applу:hover{
+  background-color: var(--basic-very-light-gray);
+}
+
+.applу:active{
+  background-color: var(--basic-very-light-gray-black);
+  color: var(--basic-black);
+  opacity: 0.5;
 }
