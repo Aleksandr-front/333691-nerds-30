@@ -22,6 +22,11 @@
   line-height: 30px;
 }
 
+.container{
+  display: grid;
+  grid-gap: 40px;
+}
+
 .main-header {
   background-color: var(--basic-super-silver);
 }
@@ -35,8 +40,8 @@ ul{
 }
 
 a{
-text-decoration: none;
-color: var(--basic-black);
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
 .page{
@@ -44,6 +49,113 @@ color: var(--basic-black);
   font-family: Roboto;
   font-style: normal;
   color: var(--basic-black);
+  min-height: 100%;
+}
+
+.main-navigation-content{
+  background-color: var(--basic-super-silver);
+}
+
+.main-header{
+  background-color: var(--basic-super-silver);
+  display: grid;
+  grid-template-columns: 160px 1fr min-content ;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-navigation{
+  display: grid;
+  justify-items: center;
+}
+
+.slide-list{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.slide-item1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  width: 1160px;
+}
+
+.slide-item2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  width: 1160px;
+}
+
+.slide-item3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  width: 1160px;
+}
+
+.slide-sircle {
+  margin: 0 auto;
+  width: 1160px;
+  text-align: center;
+}
+
+.services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 2px solid silver;
+  width: 1160px;
+  margin: 0px auto;
+  padding: 0px;
+  padding-bottom: 40px;
+}
+
+.services-item{
+  padding-left: 100px;
+}
+
+.section.services {
+  margin: 40px 0px 41px 0px;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid silver;
+  width: 1160px;
+  margin: 0px auto;
+  padding: 0px;
+  padding-bottom: 40px;
+}
+
+.page-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.window{
+  width: 308px;
+  height: 319px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.logo-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1440px;
+  margin: 0px auto;
+  padding: 0px;
+  border-bottom: 2px solid silver;
+  padding-bottom: 40px;
+}
+
+.network{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1440px;
+  margin: 0px auto;
+  padding: 0px;
 }
 
 h2{
