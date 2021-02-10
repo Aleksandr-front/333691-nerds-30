@@ -1,3 +1,31 @@
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+        font-weight: 400;
+        font-size: normal;
+}
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+        font-weight: 700;
+        font-size: normal;
+}
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+        font-weight: 500;
+        font-size: normal;
+}
+
 /* Используемые цвета */
 :root {
   --basic-black: #000000;
@@ -20,11 +48,13 @@
 .services-header {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .container {
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 80px;
 }
 
 .main-header {
@@ -46,10 +76,24 @@ a {
 
 .page {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   color: var(--basic-black);
   min-height: 100%;
+}
+
+.main-navigation-catalog {
+  background-color: var(--basic-super-silver);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-catalog {
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  padding: 75px 356px 108px 357px;
 }
 
 .main-navigation-content {
@@ -59,14 +103,11 @@ a {
 .main-header {
   background-color: var(--basic-super-silver);
   display: grid;
-  grid-template-columns: 160px 1fr min-content ;
+  grid-template-columns: 160px 1fr min-content;
   width: 1160px;
   margin: 0 auto;
-}
+  padding-top: 75px;
 
-.main-navigation {
-  display: grid;
-  justify-items: center;
 }
 
 .slide-list {
@@ -157,8 +198,8 @@ a {
 
 .network {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1440px;
+  grid-template-columns: min-content 1fr;
+  width: 1160px;
   margin: 0px auto;
   padding: 0px;
 }
@@ -184,6 +225,10 @@ p, .about-list {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
+}
+
+.progress-block {
+  text-transform: uppercase;
 }
 
 .progress-percent {
@@ -213,6 +258,10 @@ p, .about-list {
 
 .navigation-state {
   color: var(--basic-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .navigation-state:hover {
@@ -356,8 +405,8 @@ p, .about-list {
 
 .page-number a {
   display: table-cell;
-  width: 47px;
-  height: 47px;
+  width: 50px;
+  height: 50px;
   background-color: var(--basic-super-silver);
   border: 3px solid var(--basic-super-silver);
   border-radius: 3px;
@@ -366,7 +415,7 @@ p, .about-list {
   vertical-align: middle;
 }
 
-.page-number-check a {
+.page-check a {
   background-color: var(--basic-white);
 }
 
@@ -384,7 +433,7 @@ p, .about-list {
   border: 3px solid var(--basic-super-silver);
 }
 
-.page-number-next a {
+.page-next a {
   width: 260px;
   height: 50px;
 }
@@ -407,12 +456,6 @@ span {
   line-height: 19px;
 }
 
-.name-filter {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-}
-
 .sorting-item a {
   font-size: 14px;
   line-height: 18px;
@@ -426,6 +469,7 @@ span {
   color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .applу:hover {
@@ -438,6 +482,9 @@ span {
   opacity: 0.5;
 }
 
+.line-navigation {
+  height: 69px;
+}
 .main-catalog {
   width: 1158px;
   display: grid;
@@ -481,4 +528,71 @@ span {
 
 .catalog-item {
   margin-right: 41px;
+}
+
+.site-navigation {
+  display: flex;
+  padding: 0px;
+  margin: auto;
+  width: 500px;
+  height: 104px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  margin: 0px;
+}
+
+.network-list {
+  display: flex;
+}
+
+.network-item {
+  padding-right: 9px;
+}
+
+.discount {
+  margin-left: 139px;
+}
+
+.name-filter {
+  padding-top: 10px;
+  padding-right: 35px;
+  margin: 0px;
+}
+
+.sorting-list {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+}
+
+.progress-percent {
+  padding-right: 42px;
+}
+
+.progress-block {
+  padding-top: 37px;
+}
+
+.sorting-item {
+  padding-right: 25px;
+}
+
+.page-counter {
+  display: flex;
+  padding-left: 130px;
+}
+
+.page-number {
+  padding-left: 11px;
 }
