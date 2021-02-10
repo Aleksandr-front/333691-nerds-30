@@ -8,27 +8,28 @@
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
-      <div class="main-navigation-content">
-        <header class="main-header">
-          <a class="main-header-logo"><img src="img/nerds-logo.svg" height="65" width="160" alt="Логотип компании"></a>
-           <nav class="main-navigation">
-             <div class="line-navigation">
-               <ul class="site-navigation">
-                  <li><a href="#" class="navigation-state">Студия</a></li>
-                  <li><a href="#" class="navigation-state">Клиенты</a></li>
-                  <li><a href="catalog.html" class="navigation-state">Магазин</a></li>
-                  <li><a href="#" class="navigation-state">Контакты</a></li>
-                </ul>
-             </div>
-           </nav>
-          <a href="#" class="basket navigation-state"><img src="img/cart-icon.svg" height="15" width="15" alt="Иконка корзины">Корзина</a>
-        </header>
-     </div>
+    <div class="main-navigation-catalog">
+     <header class="main-header">
+       <a class="main-header-logo"><img src="img/nerds-logo.svg" height="65" width="160" alt="Логотип компании"></a>
+         <nav class="main-navigation">
+          <div class="line-navigation">
+            <ul class="site-navigation">
+              <li><a href="#" class="navigation-state">Студия</a></li>
+              <li><a href="#" class="navigation-state">Клиенты</a></li>
+              <li><a href="catalog.html" class="navigation-state">Магазин</a></li>
+              <li><a href="#" class="navigation-state">Контакты</a></li>
+           </ul>
+          </div>
+        </nav>
+       <a href="#" class="basket navigation-state">Корзина</a>
+      </header>
+      <h1 class="title-catalog">Магазин готовых шаблонов</h1>
+   </div>
   <main class="main-catalog">
     <section class="price">
       <form method="post" action="https://echo.htmlacademy.ru" class="filter">
@@ -174,10 +175,10 @@
         </li>
       </ul>
       <ul class="page-counter">   <!--Тестово накидал, еще буду править, учусь как-->
-        <li class="page-number-check page-number"><a>1</a></li>
+        <li class="page-number page-check"><a>1</a></li>
         <li class="page-number"><a href="#">2</a></li>
         <li class="page-number"><a href="#">3</a></li>
-        <li class="page-number page-number-next"><a href="#">Следующая</a></li>
+        <li class="page-number page-next"><a href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
@@ -194,7 +195,7 @@
       </div>
       <img src="img/map-marker-1.png" height="190" width="231" alt="Маркер">
     </section>
-    <section class="network">
+     <section class="network">
       <ul class="network-list">
         <!--заготовка для кнопок соц сетей, пока не дошли до их стилизации-->
         <li class="network-item"><a href="#"><img src="img/vk-rest.svg" width="81" height="81" alt="Вконтакте"></a></li>
@@ -203,7 +204,7 @@
         </li>
       </ul>
       <div class="discount">
-        <h2 class="friend">Давайте дружить, это выгодно!</h2><br>
+        <h2 class="friend">Давайте дружить, это выгодно!</h2>
         <p class="friend-discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
