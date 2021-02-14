@@ -45,6 +45,12 @@
   --basic-very-dark-grayish: #283136;
 }
 
+.page-body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 .services-header {
   font-size: 24px;
   line-height: 30px;
@@ -107,7 +113,12 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding-top: 75px;
+}
 
+.block-slide ul{
+  padding: 0px;
+  margin: 0px;
+  height: 413px;
 }
 
 .slide-list {
@@ -137,9 +148,40 @@ a {
 }
 
 .slide-sircle {
+  position: relative;
   margin: 0 auto;
-  width: 1160px;
-  text-align: center;
+  left: 5px;
+  top: -100px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+}
+
+.slide-sircle button {
+  padding: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.sircle-current::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 4px;
+  top: 4px;
+  border: 3px solid var(--basic-black);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.slide-none {
+  display: none;
 }
 
 .services-list {
@@ -149,9 +191,8 @@ a {
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   justify-items: start;
-
 }
 
 .about {
@@ -167,11 +208,70 @@ a {
 .about-text {
   display: grid;
   justify-self: start;
+  grid-template-columns: max-content;
 }
 
 .about-image {
   display: grid;
   justify-self: end;
+}
+
+.about-list {
+  position: relative;
+}
+
+.about-item {
+  padding-bottom: 24px;
+}
+
+.about-list>li::before {
+  content: "";
+  top: 10px;
+  left: 0px;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-soft-red);
+
+}
+.about-list>li:nth-child(2)::before {
+  content: "";
+  top: 58px;
+  left: 0px;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-soft-red);
+}
+
+.about-list>li:nth-child(3)::before {
+  content: "";
+  top: 105px;
+  left: 0px;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-soft-red);
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.progress-block {
+  padding-left: 20px;
+  margin: 0px;
+}
+
+.about-text p {
+  margin: 0px;
+}
+
+.text-title {
+  padding: 0px;
+  margin: 0px;
 }
 
 .page-footer {
@@ -182,8 +282,8 @@ a {
 .window {
   width: 308px;
   height: 319px;
-  margin: 0px auto;
   padding: 0px;
+  margin-left: 370px;
 }
 
 .logo-item {
@@ -194,6 +294,7 @@ a {
   padding: 0px;
   border-bottom: 2px solid silver;
   padding-bottom: 40px;
+  justify-items: center;
 }
 
 .network {
@@ -202,6 +303,7 @@ a {
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
+  margin-bottom: 68px;
 }
 
 h2 {
@@ -225,11 +327,11 @@ p, .about-list {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-}
-
-.progress-block {
   text-transform: uppercase;
 }
+
+.dev-order {
+  padding-top: 20px;}
 
 .progress-percent {
   font-weight: bold;
@@ -280,14 +382,15 @@ p, .about-list {
 }
 
 .block-slide>h1 {
-  margin: 0px;
-  visibility: hidden;
+  display: none;
 }
 
 .friend {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .friend-discount {
@@ -369,6 +472,8 @@ p, .about-list {
   text-align: center;
   vertical-align: middle;
   border: none;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .button-write:hover {
@@ -415,7 +520,7 @@ p, .about-list {
   vertical-align: middle;
 }
 
-.page-check a {
+.page-number-check a {
   background-color: var(--basic-white);
 }
 
@@ -433,7 +538,7 @@ p, .about-list {
   border: 3px solid var(--basic-super-silver);
 }
 
-.page-next a {
+.page-number-next a {
   width: 260px;
   height: 50px;
 }
@@ -469,7 +574,6 @@ span {
   color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
 }
 
 .applу:hover {
@@ -485,7 +589,6 @@ span {
 .line-navigation {
   height: 69px;
 }
-
 .main-catalog {
   width: 1158px;
   display: grid;
@@ -551,10 +654,38 @@ span {
 
 .network-list {
   display: flex;
+  padding: 0px;
 }
 
-.network-item {
-  padding-right: 9px;
+.social-button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: var(--basic-very-light-gray-black);
+}
+
+.social-button:hover,
+.social-button:active {
+  background-color: var(--basic-bright-red);
+}
+
+.social-button:focus path {
+  fill: var(--basic-white);
+  opacity: 0.3;
+}
+
+.network ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 261px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .discount {
@@ -563,7 +694,6 @@ span {
 
 .name-filter {
   padding-top: 10px;
-  padding-right: 35px;
   margin: 0px;
 }
 
@@ -571,18 +701,6 @@ span {
   display: flex;
   align-self: center;
   justify-content: space-between;
-}
-
-.progress {
-  display: flex;
-}
-
-.progress-percent {
-  padding-right: 42px;
-}
-
-.progress-block {
-  padding-top: 37px;
 }
 
 .sorting-item {
