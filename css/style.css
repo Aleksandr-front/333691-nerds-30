@@ -33,6 +33,7 @@
   --basic-super-silver: #EEEEEE;
   --basic-very-light-gray: #DFDFDF;
   --basic-very-light-gray-black: #D5D5D5;
+  --basic-Light-grayish-blue: #d7dcde;
   --basic-soft-red: #FB565A;       /* Покой */
   --basic-bright-red: #E74246;     /* Наведение */
   --basic-moderate-red: #D7373B;   /* Нажатие */
@@ -43,6 +44,9 @@
   --basic-bright-orange: #EAB534;  /* Наведение */
   --basic-vivid-orange: #E5A722;   /* Нажатие */
   --basic-very-dark-grayish: #283136;
+  --basic-Gray: #ababab;
+  --basic-Light-gray: #cfcfcf;
+  --basic-Very-dark-gray: #4d4d4d;
 }
 
 .page-body {
@@ -191,18 +195,19 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 100px;
-  border-bottom: 2px solid silver;
+  border-bottom: 2px solid var(--basic-super-silver);
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   justify-items: start;
+  padding-left: 20px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 2px solid silver;
+  border-bottom: 2px solid var(--basic-super-silver);
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
@@ -213,7 +218,7 @@ a {
   display: grid;
   justify-self: start;
   grid-template-columns: max-content;
-  padding-left: 20px;
+  padding: 0px 20px;
 }
 
 .about-image {
@@ -298,7 +303,7 @@ a {
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
-  border-bottom: 2px solid silver;
+  border-bottom: 2px solid var(--basic-super-silver);
   padding-bottom: 40px;
   justify-items: center;
 }
@@ -368,6 +373,7 @@ p, .about-list {
   color: var(--basic-black);
 }
 
+
 .navigation-state {
   color: var(--basic-black);
   font-weight: 500;
@@ -387,7 +393,7 @@ p, .about-list {
 
 .navigation-stateL:link {
   color: var(--basic-black);
-  border-bottom: 2px solid #FB565A;
+  border-bottom: 2px solid var(--basic-soft-red);
   padding-bottom: 10px;
 }
 
@@ -550,8 +556,13 @@ li .page-next {
 }
 
 li .page-number:hover {
-  background-color: #DFDFDF;
+  background-color: var(--basic-very-light-gray);
+  border: var(--basic-very-light-gray);
   border-radius: 3px;
+}
+
+li .page-check:hover {
+  padding-left: 21px;
 }
 
 li .page-number:active {
@@ -679,6 +690,11 @@ span {
   justify-content: space-between;
   padding-top: 20px;
   margin: 0px;
+  flex-wrap: nowrap;
+}
+.basket img {
+  padding-right: 25px;
+  padding-top: 5px;
 }
 
 .network-list {
@@ -775,19 +791,19 @@ span {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color:  var(--basic-very-light-gray);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--basic-Light-grayish-blue);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: var(--basic-lime-green);
 }
 
 .range-controls .toggle {
@@ -797,10 +813,10 @@ span {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-Gray);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-Light-gray);
   cursor: pointer;
 }
 
@@ -831,7 +847,7 @@ span {
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--basic-very-light-gray);
   font-family: inherit;
   font-size: inherit;
 }
@@ -873,7 +889,7 @@ span {
   top: -5px;
   width: 21px;
   height: 21px;
-  border: 4px solid #4D4D4D;
+  border: 4px solid var(--basic-Very-dark-gray);
   opacity: 0.4;
   border-radius: 50%;
 }
@@ -884,7 +900,7 @@ span {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #4D4D4D;
+  background-color: var(--basic-Very-dark-gray);
   opacity: 0.4;
   z-index: 1;
   left: -25px;
@@ -948,11 +964,11 @@ span {
   content: "";
   width: 14px;
   height: 14px;
-  background-color: #ffffff;
+  background-color: var(--basic-white);
   border-radius: 50%;
   top: 13px;
   left: 35px;
-  box-shadow: 25px 0px 0px #ffffff, -25px 0px 0px #ffffff;
+  box-shadow: 25px 0px 0px var(--basic-white), -25px 0px 0px var(--basic-white);
 }
 
 .catalog-item img:hover {
