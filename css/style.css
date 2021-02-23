@@ -68,6 +68,7 @@
 .container {
   display: grid;
   grid-gap: 80px;
+
 }
 
 .main-header {
@@ -76,6 +77,7 @@
 
 .block-slide {
   background-color: var(--basic-super-silver);
+  padding-left: 20px;
 }
 
 ul {
@@ -111,6 +113,7 @@ a {
 
 .main-navigation-content {
   background-color: var(--basic-super-silver);
+  padding-left: 20px;
 }
 
 .main-header {
@@ -285,16 +288,12 @@ a {
   margin: 0px;
 }
 
-.page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .window {
   width: 308px;
   height: 319px;
   padding: 0px;
   margin-left: 370px;
+  padding-left: 10px;
 }
 
 .logo-item {
@@ -315,6 +314,7 @@ a {
   margin: 0px auto;
   padding: 0px;
   margin-bottom: 68px;
+  padding-left: 20px;
 }
 
 h2 {
@@ -324,6 +324,12 @@ h2 {
 }
 
 h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.text-slide {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -371,8 +377,12 @@ p, .about-list {
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
+  padding-right: 10px;
 }
 
+.basket-catalog {
+  padding-right: 0px;
+}
 
 .navigation-state {
   color: var(--basic-black);
@@ -432,12 +442,15 @@ p, .about-list {
   margin: 0px;
 }
 
-.button-slide:hover {
+.button-slide:hover,
+.send:hover {
   background-color: var(--basic-bright-red);
 }
 
-.button-slide:active {
+.button-slide:active,
+.send:active {
   background-color: var(--basic-moderate-red);
+  color: rgba(255,255,255,0.2);
 }
 
 .button-service {
@@ -456,15 +469,44 @@ p, .about-list {
   margin-bottom: 32px;
 }
 
-.button-service-red {background-color: var(--basic-soft-red)}
-.button-service-red:hover {background-color: var(--basic-bright-red)}
-.button-service-red:active {background-color: var(--basic-moderate-red)}
-.button-service-green {background-color: var(--basic-lime-green)}
-.button-service-green:hover {background-color: var(--basic-strong-cyann)}
-.button-service-green:active {background-color: var(--basic-dark-cyan)}
-.button-service-orange {background-color: var(--basic-soft-yellow)}
-.button-service-orange:hover {background-color: var(--basic-bright-orange)}
-.button-service-orange:active {background-color: var(--basic-vivid-orange)}
+.button-service-red {
+  background-color: var(--basic-soft-red)
+}
+
+.button-service-red:hover {
+  background-color: var(--basic-bright-red)
+
+}
+.button-service-red:active {
+  background-color: var(--basic-moderate-red);
+  color: rgba(255,255,255,0.2);
+
+}
+.button-service-green {
+  background-color: var(--basic-lime-green)
+
+}
+.button-service-green:hover {
+  background-color: var(--basic-strong-cyann)
+}
+
+.button-service-green:active {
+  background-color: var(--basic-dark-cyan);
+  color: rgba(255,255,255,0.2);
+}
+
+.button-service-orange {
+  background-color: var(--basic-soft-yellow)
+}
+
+.button-service-orange:hover
+{background-color: var(--basic-bright-orange)
+
+}
+.button-service-orange:active {
+  background-color: var(--basic-vivid-orange);
+  color: rgba(255,255,255,0.2);
+}
 
 .button-add {
   width: 200px;
@@ -606,6 +648,8 @@ span {
   line-height: 18px;
 }
 
+
+
 .applу {
   width: 260px;
   height: 50px;
@@ -644,12 +688,12 @@ span {
 .sorting {
   width: 900px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: 360px 402px;
   padding: 0px;
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 33px;
+  padding-left: 140px;
 }
 
 .catalog-list {
@@ -661,8 +705,12 @@ span {
   margin-left: 141px;
 }
 
+.sorting-table ul {
+  padding-left: 7px;
+}
 
-.name-catalog-item, .name-filter {
+.name-catalog-item,
+.name-filter {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
@@ -691,6 +739,7 @@ span {
   padding-top: 20px;
   margin: 0px;
   flex-wrap: nowrap;
+  padding-right: 20px;
 }
 .basket img {
   padding-right: 25px;
@@ -714,7 +763,7 @@ span {
 }
 
 .social-button:hover,
-.social-button:active {
+.social-button:hover {
   background-color: var(--basic-bright-red);
 }
 
@@ -739,7 +788,14 @@ span {
 
 .name-filter {
   padding-top: 10px;
+  padding-left: 0px;
   margin: 0px;
+}
+
+.filter-slider {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .sorting-list {
@@ -749,6 +805,8 @@ span {
   font-size: 14px;
   line-height: 18px;
 }
+
+
 
 .sorting-item {
   padding-right: 25px;
@@ -1075,4 +1133,128 @@ span {
 .name-catalog-item:active {
   color:var(--basic-black);
   opacity: 0.3;
+}
+
+.map {
+  position: relative;
+  left: 0px;
+  margin-top: 80px;
+  transform: translate(0%, 5%);
+  width: 100%;
+  height: 416px;
+}
+
+.window {
+  width: 310px;
+  height: 268px;
+  background-color: var(--basic-white);
+  position: absolute;
+  content: "";
+  top: 54px;
+  left: -230px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.marker {
+  height: 190px;
+  width: 231;
+  position: absolute;
+  content: "";
+  top: 87px;
+  left: 822px;
+}
+
+.page-footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 1440px;
+  margin: 0 auto;
+  height: 633px;
+}
+
+.popup {
+  width: 960px;
+  height: 671px;
+  background-color: var(--basic-white);
+  outline: 5px solid var(--basic-soft-red);
+  outline-offset: -5px;
+  position: relative;
+  content: "";
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  left: 500px;
+  bottom: 50px;
+}
+
+.popup-list {
+  padding-top: 62px;
+}
+
+.popup-item {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-gap: 40px;
+  grid-template-rows: 1fr;
+  margin-left: 90px;
+}
+
+.name-filter {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.message {
+  height: 118px;
+  width: 760px;
+}
+
+.login,
+.email {
+  width: 360px;
+  height: 50px;
+}
+
+.send {
+  width: 259px;
+  height: 50px;
+  background-color: var(--basic-soft-red);
+  border-radius: 3px;
+  border: none;
+  margin-top: 230px;
+  margin-left: -400px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.name-filter-popup {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  margin-left: 90px;
+  margin-top: 0px;
+}
+
+.close-cross {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  left: 847px;
+  top: 80px;
+  fill: var(--basic-soft-red);
+  opacity: 0.3;
+}
+
+.close-cross:hover {
+  fill: var(--basic-soft-red);
+  opacity: 1;
+}
+
+.close-cross:active {
+  fill: var(--basic-soft-red);
+  opacity: 0.1;
 }
