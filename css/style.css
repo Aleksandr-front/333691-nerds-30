@@ -680,20 +680,20 @@ span {
 .main-catalog {
   width: 1158px;
   display: grid;
-  grid-template-columns: 260px 760px;
+  grid-template-columns: 260px 757px;
   padding: 0px;
   margin: 0 auto;
+  grid-gap: 142px;
 }
 
 .sorting {
-  width: 900px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 360px 402px;
+  grid-template-columns: 370px 389px;
   padding: 0px;
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 33px;
-  padding-left: 140px;
 }
 
 .catalog-list {
@@ -702,7 +702,7 @@ span {
   grid-template-rows: 1fr 1fr 1fr;
   padding: 0px;
   margin: 0 auto;
-  margin-left: 141px;
+  margin-top: 40px;
 }
 
 .sorting-table ul {
@@ -1140,8 +1140,7 @@ span {
   left: 0px;
   margin-top: 80px;
   transform: translate(0%, 5%);
-  width: 100%;
-  height: 416px;
+  object-fit: cover;
 }
 
 .window {
@@ -1151,7 +1150,7 @@ span {
   position: absolute;
   content: "";
   top: 54px;
-  left: -230px;
+  left: 10px;
   padding-top: 40px;
   text-align: center;
 }
@@ -1162,13 +1161,13 @@ span {
   position: absolute;
   content: "";
   top: 87px;
-  left: 822px;
+  left: 1102px;
 }
 
 .page-footer {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  width: 1440px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   margin: 0 auto;
   height: 633px;
 }
