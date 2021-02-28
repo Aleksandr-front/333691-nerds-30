@@ -109,6 +109,11 @@ a {
   font-size: 55px;
   line-height: 55px;
   padding: 75px 356px 108px 357px;
+  margin: 0px;
+}
+
+.site-navigation li {
+  padding-left: 35px;
 }
 
 .main-navigation-content {
@@ -288,14 +293,6 @@ a {
   margin: 0px;
 }
 
-.window {
-  width: 308px;
-  height: 319px;
-  padding: 0px;
-  margin-left: 370px;
-  padding-left: 10px;
-}
-
 .logo-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -303,8 +300,27 @@ a {
   margin: 0px auto;
   padding: 0px;
   border-bottom: 2px solid var(--basic-super-silver);
-  padding-bottom: 40px;
+  padding-bottom: 63px;
   justify-items: center;
+  position: relative;
+}
+
+.logo-list {
+  position: relative;
+}
+
+.logo-list::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-super-silver);
+  left: 245px;
+  top: 20px;
+}
+
+.logo-last::after {
+  display: none;
 }
 
 .network {
@@ -313,6 +329,7 @@ a {
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
+  margin-top: 68px;
   margin-bottom: 68px;
   padding-left: 20px;
 }
@@ -580,7 +597,7 @@ li .page-number  {
   width: 50px;
   height: 50px;
   box-sizing: border-box;
-  margin: 0px 11px;
+  margin-right:  11px;
   background-color: var(--basic-super-silver);
   align-items: center;
   padding-left: 20px;
@@ -589,6 +606,17 @@ li .page-number  {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.text-form {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.popup-item input,
+.popup-item textarea {
+  margin-top: 9px;
 }
 
 li .page-next {
@@ -658,7 +686,7 @@ span {
   color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 40px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
@@ -693,16 +721,15 @@ span {
   padding: 0px;
   margin: 0 auto;
   margin-top: 39px;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
 }
 
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 41px;
+  grid-row-gap: 30px;
   padding: 0px;
-  margin: 0 auto;
-  margin-top: 40px;
 }
 
 .sorting-table ul {
@@ -717,8 +744,11 @@ span {
   line-height: 30px;
 }
 
+.name-sorting {
+  padding-top: 10px;
+}
+
 .catalog-item {
-  margin-right: 41px;
   display: block;
 }
 
@@ -728,7 +758,6 @@ span {
   margin: auto;
   width: 500px;
   height: 104px;
-  justify-content: space-between;
   padding-top: 30px;
 }
 
@@ -787,7 +816,6 @@ span {
 }
 
 .name-filter {
-  padding-top: 10px;
   padding-left: 0px;
   margin: 0px;
 }
@@ -806,19 +834,18 @@ span {
   line-height: 18px;
 }
 
-
-
 .sorting-item {
   padding-right: 25px;
 }
 
 .page-counter {
   display: flex;
-  padding-left: 130px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.page-number {
-  padding-left: 11px;
+.page-number  li {
+  margin: 0px;
 }
 
                         /*Бегунок выбора цен*/
@@ -886,6 +913,18 @@ span {
   left: 160px;
 }
 
+.price {
+  margin-top: 55px;
+}
+
+.filter-grid {
+  margin-top: 54px;
+}
+
+.filter-features {
+  margin-top: 47px;
+}
+
 .price-controls {
   display: flex;
   justify-content: space-between;
@@ -914,9 +953,9 @@ span {
   margin: 0;
   padding: 0;
   border: none;
+  padding: 0px;
+  margin: 0px;
 }
-
-
 
 .grid li {
   padding-top: 19px;
@@ -926,18 +965,14 @@ span {
 }
                        /*Фильтр Сетка*/
 
-.filter-item {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 54px;
-}
-
 .filter-radio input {
   display: none;
 }
 
 .filter-option label {
   position: relative;
+  line-height: 20px;
+
 }
 
 .filter-radio input + label::before {
@@ -972,6 +1007,11 @@ span {
                        /*Фильтр Особенности*/
 .features input {
   display: none;
+}
+
+.grid,
+.features {
+  margin: 0px;
 }
 
 .filter-checkbox {
@@ -1010,7 +1050,6 @@ span {
 .catalog-item img {
   border-top: 40px solid rgba(77, 77, 77, 0.1);
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 
 .catalog-item {
@@ -1137,9 +1176,7 @@ span {
 
 .map {
   position: relative;
-  left: 0px;
-  margin-top: 80px;
-  transform: translate(0%, 5%);
+  transform: translate(0%, 0%);
   object-fit: cover;
 }
 
@@ -1150,7 +1187,7 @@ span {
   position: absolute;
   content: "";
   top: 54px;
-  left: 10px;
+  left: 380px;
   padding-top: 40px;
   text-align: center;
 }
@@ -1166,10 +1203,10 @@ span {
 
 .page-footer {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 416px;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  height: 633px;
+  margin-top: 80px;
 }
           /*Попап*/
 .popup {
