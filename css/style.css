@@ -452,6 +452,7 @@ p, .about-list {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  outline: none;
 }
 
 .slide-content1 p {
@@ -536,6 +537,7 @@ p, .about-list {
   text-align: center;
   vertical-align: middle;
   border: none;
+  outline: none;
 }
 
 .button-add:hover {
@@ -558,6 +560,8 @@ p, .about-list {
   border: none;
   font-size: 16px;
   line-height: 18px;
+  outline: none;
+  cursor: pointer;
 }
 
 .button-write:hover {
@@ -690,6 +694,7 @@ span {
   border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
+  outline: none;
 }
 
 .applу:hover {
@@ -730,6 +735,7 @@ span {
   grid-column-gap: 41px;
   grid-row-gap: 30px;
   padding: 0px;
+  margin-bottom: 39px;
 }
 
 .sorting-table ul {
@@ -1174,24 +1180,21 @@ span {
   opacity: 0.3;
 }
 
-.map {
-  position: relative;
-  transform: translate(0%, 0%);
-  object-fit: cover;
-}
-
 .window {
   width: 310px;
   height: 268px;
   background-color: var(--basic-white);
   position: absolute;
   content: "";
-  top: 54px;
-  left: 380px;
   padding-top: 40px;
   text-align: center;
+  margin: 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-180%, -50%);
 }
 
+                  /*Не используемый Маркер
 .marker {
   height: 190px;
   width: 231;
@@ -1199,7 +1202,7 @@ span {
   content: "";
   top: 87px;
   left: 1102px;
-}
+}*/
 
 .page-footer {
   display: grid;
@@ -1207,6 +1210,8 @@ span {
   grid-template-columns: 1fr;
   margin: 0 auto;
   margin-top: 80px;
+  position: relative;
+  content: "";
 }
           /*Попап*/
 .popup {
@@ -1218,8 +1223,9 @@ span {
   position: relative;
   content: "";
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  left: 500px;
-  bottom: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .popup-list {
@@ -1264,6 +1270,8 @@ span {
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
 }
 
 .name-filter-popup {
@@ -1276,21 +1284,46 @@ span {
 
 .close-cross {
   position: absolute;
+  cursor: pointer;
   content: "";
-  width: 21px;
-  height: 21px;
   left: 847px;
   top: 80px;
-  fill: var(--basic-soft-red);
+  color: var(--basic-soft-red);
   opacity: 0.3;
+  border: 0;
+  background-color: var(--basic-white);
+  outline: none;
+}
+
+.close-cross::before,
+.close-cross::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-soft-red);
+}
+
+.close-cross::before {
+  transform: rotate(45deg);
+}
+
+.close-cross::after {
+  transform: rotate(-45deg);
 }
 
 .close-cross:hover {
-  fill: var(--basic-soft-red);
+  color: var(--basic-soft-red);
   opacity: 1;
 }
 
 .close-cross:active {
-  fill: var(--basic-soft-red);
+  color: var(--basic-soft-red);
   opacity: 0.1;
+}
+
+.img-background {
+  background-color: rgba(77, 77, 77, 0.1);
 }
