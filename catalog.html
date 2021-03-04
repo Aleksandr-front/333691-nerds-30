@@ -14,14 +14,14 @@
 
 <body class="page-body">
     <div class="main-navigation-catalog">
-      <header class="main-header">
+      <header class="main-header main-header-catalog">
       <a href="index.html" class="main-header-logo"><img src="img/nerds-logo.svg" height="65" width="160" alt="Логотип компании" aria-label="Перейти на главную страницу"></a>
       <nav class="main-navigation">
         <div class="line-navigation">
           <ul class="site-navigation">
             <li><a href="index.html" class="navigation-state" aria-label="Перейти на страницу студия">Студия</a></li>
             <li><a href="blank.html" class="navigation-state" aria-label="Перейти на страницу клиенты">Клиенты</a></li>
-            <li><a href="catalog.html" class="navigation-state" aria-label="Перейти на страницу магазин">Магазин</a></li>
+            <li class="site-navigation-curent"><a href="catalog.html" class="navigation-state" aria-label="Перейти на страницу магазин">Магазин</a></li>
             <li><a href="blank.html" class="navigation-state" aria-label="Перейти на страницу контакты">Контакты</a></li>
           </ul>
         </div>
@@ -113,9 +113,9 @@
                   <li class="sorting-item "><a href="#" aria-label="Сортировать по типу">по типу</a></li>
                   <li class="sorting-item"><a href="#" aria-label="Сортировать по названию">по названию</a></li>
                   <li class="sorting-pointer">
-                      <input type="radio" name="sorting" value="sort_down" id="down" class="down sort-select-radio">
+                      <input type="radio" name="sorting" value="sort_down" id="down" aria-label="Сортировка по убыванию" class="down sort-select-radio">
                       <label for="down"></label>
-                      <input type="radio" name="sorting" value="sort_up" id="up" checked class="up">
+                      <input type="radio" name="sorting" value="sort_up" id="up" aria-label="Сортировка по возрастанию"checked class="up">
                       <label for="up"></label>
 
                   </li>
@@ -127,7 +127,9 @@
               <a href="blank.html"><img src="img/img-sedona-1.jpg" height="578" width="358" class="img-background" alt="Шаблон сайта Седона" aria-label="Шаблон сайта Седона"></a>
                <!--Шаблон Седона-->
                 <div class="card">
-                  <h3 class="name-catalog-item">Sedona</h3>
+                  <a href="blank.html">
+                    <h3 class="name-catalog-item">Sedona</h3>
+                  </a>
                   <p>Информационный сайт<br>для туристов</p>
                   <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта Седона">9 900 &#8381;</button></p>
                </div>
@@ -136,7 +138,9 @@
               <a href="blank.html"><img src="img/img-pink-1.jpg" height="578" width="358" class="img-background" alt="Шаблон сайта Пинк" aria-label="Шаблон сайта Пинк"></a>
               <!--Шаблон Пинк-->
                <div class="card">
-                 <h3 class="name-catalog-item">Pink</h3>
+                <a href="blank.html">
+                  <h3 class="name-catalog-item">Pink</h3>
+                </a>
                  <p>Взгляни на мир<br>иначe</p>
                  <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта Пинк">9 700 &#8381;</button></p>
                </div>
@@ -145,7 +149,9 @@
                <a href="blank.html"><img src="img/img-barbershop-1.png" height="578" width="358" class="img-background" alt="Шаблон сайта Барбершоп" aria-label="Шаблон сайта Барбершоп"></a>
               <!--Шаблон Барбер Шоп-->
                <div class="card">
-                 <h3 class="name-catalog-item">Borodinski</h3>
+                <a href="blank.html">
+                  <h3 class="name-catalog-item">Borodinski</h3>
+                </a>
                  <p>Стрижка у нас<br>это выгодно</p>
                  <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта Барбершоп">9 500 &#8381;</button></p>
                </div>
@@ -154,7 +160,9 @@
                <a href="blank.html"><img src="img/img-mishka-1.jpg" height="578" width="358" class="img-background" alt="Шаблон сайта Мишка" aria-label="Шаблон сайта Мишка"></a>
               <!--Шаблон Мишка-->
                <div class="card">
+                <a href="blank.html">
                   <h3 class="name-catalog-item">Mishka</h3>
+                </a>
                   <p>Милые штуки ручной<br>работы для дома</p>
                   <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта Мишка">9 300 &#8381;</button></p>
                </div>
@@ -163,7 +171,9 @@
                 <a href="blank.html"><img src="img/img-aplus-1.png" height="578" width="358" class="img-background" alt="Шаблон сайта А+" aria-label="Шаблон сайта А+"></a>
               <!--Шаблон А+-->
                <div class="card">
-                 <h3 class="name-catalog-item">A+</h3>
+                <a href="blank.html">
+                  <h3 class="name-catalog-item">A+</h3>
+                </a>
                  <p>Учеба никогда не была<br>такой интересной</p>
                  <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта А+">9 100 &#8381;</button></p>
                </div>
@@ -172,7 +182,9 @@
                 <a href="blank.html"><img src="img/img-kvast-1.jpg" height="578" width="358" class="img-background" alt="Шаблон сайта Кваст" aria-label="Шаблон сайта Кваст"></a>
                 <!--Шаблон Кваст-->
               <div class="card">
-                 <h3 class="name-catalog-item">Кваст</h3>
+                <a href="blank.html">
+                  <h3 class="name-catalog-item">Кваст</h3>
+                </a>
                  <p>Крафтовый квас<br>всему голова</p>
                  <p><button type="submit" name="add-to-cart" class="button-add" aria-label="Цена сайта Кваст">9 000 &#8381;</button></p>
               </div>

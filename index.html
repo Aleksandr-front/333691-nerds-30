@@ -122,7 +122,7 @@
     </section>
     <section class="all-logo">
       <ul class="logo-item">
-        <li class="logo-list"><a href="htmlacademy.ru"><img src="img/logo-academy.svg" height="90" width="209"
+        <li class="logo-list"><a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" height="90" width="209"
               alt="Логотип академии"></a>
         </li>
         <li class="logo-list"><a href="http://barbershop-borodinski.webflow.io/"><img src="img/logo-barbershop.svg" height="90" width="209"
@@ -148,7 +148,6 @@
               HRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1614531297760!5m2!1sru!2sua"
               width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Карта Google Map">
           </iframe>
-        </iframe>
           <div class="window">
              <h3 class="page-footer-name">NЁRDS DESIGN STUDIO</h3>
                 <address class="adres">
@@ -207,20 +206,21 @@
       </div>
     </section>
   </footer>
-  <div class="popup">
-    <form class="popup-list" method="POST">
-      <h2 class="name-filter-popup" aria-label="Кнопка открытия формы напишите нам">Напишите нам</h2>
-          <button type="button" class="close-cross" aria-label="Закрыть форму входа" aria-label="Кнопка закрытия формы напишите нам"></button>
+  <section class="modal-login">
+      <h2 class="login-link" aria-label="Кнопка открытия формы напишите нам">Напишите нам</h2>
+            <button type="button" class="modal-close" aria-label="Закрыть форму входа" aria-label="Кнопка закрытия формы напишите нам"></button>
+          <form class="login-form" method="POST">
             <div class="popup-item">
               <p><label for="login" class="text-form" aria-label="Введите Ваше имя">Ваше имя:<br></label>
-                 <input type="text" name="login" id="login" class="login" placeholder="Имя Фамилия"></p>
+                 <input type="text" name="login" id="login" class="login-icon-name" placeholder="Имя Фамилия"></p>
               <p><label for="email" class="text-form" aria-label="Введите Ваш емейл">Ваш email:<br></label>
-                 <input type="text" name="email"id="email" class="email" placeholder="email@example.com"></p>
+                 <input type="email" name="email"id="email" class="login-icon-email" placeholder="email@example.com" required></p>
               <p><label for="message" class="text-form" aria-label="Напишите текст письма">Текст письма:<br></label>
                  <textarea name="message" id="message" class="message" placeholder="В свободной форме"></textarea></p>
               <button type="submit" name="send" class="send" aria-label="Кнопка отправить">Отправить</button>
         </div>
     </form>
-  </div>
+  </section>
+    <script src="login.js"></script>
 </body>
 </html>
