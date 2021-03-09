@@ -211,14 +211,14 @@
   <section class="modal-login">
       <h2 class="login-link" aria-label="Кнопка открытия формы напишите нам">Напишите нам</h2>
             <button type="button" class="modal-close" aria-label="Закрыть форму входа" aria-label="Кнопка закрытия формы напишите нам"></button>
-          <form class="login-form" method="POST">
+         <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
             <div class="popup-item">
               <p><label for="login" class="text-form" aria-label="Введите Ваше имя">Ваше имя:<br></label>
-                 <input type="text" name="login" id="login" class="login-icon-name" placeholder="Имя Фамилия"></p>
+                 <input type="text" name="login" id="login" class="login-icon-name" placeholder="Имя Фамилия" required></p>
               <p><label for="email" class="text-form" aria-label="Введите Ваш емейл">Ваш email:<br></label>
                  <input type="email" name="email"id="email" class="login-icon-email" placeholder="email@example.com" required></p>
               <p><label for="message" class="text-form" aria-label="Напишите текст письма">Текст письма:<br></label>
-                 <textarea name="message" id="message" class="message" placeholder="В свободной форме"></textarea></p>
+                 <textarea name="message" id="message" class="message" placeholder="В свободной форме" required></textarea></p>
               <button type="submit" name="send" class="send" aria-label="Кнопка отправить">Отправить</button>
             </div>
          </form>
