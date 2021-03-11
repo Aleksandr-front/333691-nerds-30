@@ -1221,6 +1221,11 @@ span {
   left: 50%;
   top: 50%;
   transform: translate(-180%, -50%);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hiden {
+  display:none;
 }
 
                   /*Не используемый Маркер
