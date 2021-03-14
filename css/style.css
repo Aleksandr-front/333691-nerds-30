@@ -720,6 +720,7 @@ img.features-list-logo {
   margin-top: 37px;
   height: 13px;
   padding-left: 45px;
+  vertical-align: middle;
 }
 
 .button-write-catalog {
@@ -727,6 +728,7 @@ img.features-list-logo {
   width: 219px;
   padding: 0px;
   padding-left: 2px;
+  vertical-align: middle;
 }
 
 
